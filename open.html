@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6e2ba" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <meta name="description" content="A personalized invitation to Kalea Elianna's 1st birthday celebration." />
+  <title>Kalea Elianna Turns One!</title>
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/rampver-financials/image/upload/v1787385325/favicon_rxgotr.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://res.cloudinary.com" />
+  <link rel="preload" as="image" href="https://res.cloudinary.com/rampver-financials/image/upload/v1787378019/ECB/kalea-1st-birthday/DSCF5008.jpg" />
+  <link rel="preload" as="image" href="https://res.cloudinary.com/rampver-financials/image/upload/v1787380913/ECB/kalea-1st-birthday/second_image_new.png" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --beige: #f7ead8;
+      --beige-light: #fffaf2;
+      --pink: #f6d8df;
+      --pink-deep: #d992a6;
+      --pink-dark: #a76579;
+      --yellow: #f5d875;
+      --yellow-light: #fff3bd;
+      --brown: #8d6b5a;
+      --brown-dark: #5f463a;
+      --ink: #54423a;
+      --muted: #89776e;
+      --line: rgba(95,70,58,.14);
+      --paper: #fffdf9;
+      --shadow: 0 16px 45px rgba(96,72,60,.10);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 8%, rgba(246,216,223,.65), transparent 24rem),
+        radial-gradient(circle at 92% 12%, rgba(245,216,117,.32), transparent 24rem),
+        linear-gradient(180deg, #fffaf3 0%, #fffdf9 48%, #fff8f9 100%);
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    [hidden] { display: none !important; }
+
+    .page {
+      width: min(1040px, calc(100% - 24px));
+      margin: 0 auto;
+      padding: 20px 0 52px;
+    }
+
+    .section {
+      padding: 48px 0;
+      position: relative;
+    }
+
+    h1, h2, h3, p { position: relative; z-index: 1; }
+    h1, .hero-subtitle, .guest-panel h2, .section-heading h2, .story-copy h2, footer strong {
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .hero-image-wrap {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--beige);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(95,70,58,.08);
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      object-position: center;
+      background: var(--beige-light);
+    }
+
+    .hero-image-wrap::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 32%;
+      background: linear-gradient(180deg, rgba(255,250,242,0), rgba(255,250,242,.16) 50%, rgba(255,250,242,.38));
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-copy {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(22px, 5vw, 58px);
+      transform: translateX(-50%);
+      width: min(94%, 860px);
+      text-align: center;
+      padding: 14px 20px 16px;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--pink-deep);
+      font-size: clamp(3.7rem, 11vw, 7.4rem);
+      line-height: .92;
+      letter-spacing: -.045em;
+      text-shadow: 0 2px 0 rgba(255,255,255,.95), 0 4px 18px rgba(95,70,58,.18);
+      white-space: nowrap;
+    }
+
+    .hero-subtitle {
+      margin: 8px 0 0;
+      font-size: clamp(2.35rem, 7vw, 4.7rem);
+      color: var(--pink-deep);
+      line-height: 1;
+      text-shadow: 0 2px 0 rgba(255,255,255,.95), 0 4px 16px rgba(95,70,58,.18);
+    }
+
+    .hero-date {
+      display: inline-block;
+      margin: 16px 0 0;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: clamp(.92rem, 2.3vw, 1.18rem);
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--pink-dark);
+      background: rgba(255,250,242,.84);
+      box-shadow: 0 5px 18px rgba(95,70,58,.08);
+      backdrop-filter: blur(4px);
+    }
+
+    .guest-panel {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 14px 18px 4px;
+    }
+
+    .loading {
+      min-height: 84px;
+      display: grid;
+      place-items: center;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    .loading::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-top: 8px;
+      border: 2px solid rgba(217,146,166,.18);
+      border-top-color: var(--pink-deep);
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .guest-panel h2 {
+      margin: 0 0 16px;
+      font-size: clamp(3rem, 8vw, 4.7rem);
+      line-height: 1.05;
+      color: var(--pink-deep);
+      letter-spacing: -.03em;
+    }
+
+    .reserved {
+      margin: 0 auto 20px;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .seat-line {
+      display: inline-block;
+      margin: 0 auto 28px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--pink);
+      color: #8a5566;
+      font-weight: 800;
+    }
+
+    .rsvp-block {
+      max-width: 620px;
+      margin: 0 auto 18px;
+      padding: 22px 0 0;
+    }
+
+    .rsvp-title {
+      margin: 0 0 7px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--brown-dark);
+    }
+
+    .rsvp-help {
+      margin: 0 auto 18px;
+      font-size: .82rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .rsvp-options {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .rsvp-choice {
+      min-width: 120px;
+      min-height: 43px;
+      padding: 9px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(217,146,166,.32);
+      background: var(--paper);
+      color: var(--pink-dark);
+      font-weight: 800;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+
+    .rsvp-choice:hover,
+    .rsvp-choice.active {
+      background: var(--pink);
+      border-color: var(--pink-deep);
+      transform: translateY(-1px);
+    }
+
+    .rsvp-form {
+      max-width: 520px;
+      margin: 0 auto 20px;
+      text-align: left;
+    }
+
+    .form-field { margin-bottom: 14px; }
+    .form-field label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: .75rem;
+      font-weight: 800;
+      color: var(--brown-dark);
+    }
+
+    .form-field input {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid rgba(95,70,58,.18);
+      border-radius: 12px;
+      background: #fffdf9;
+      color: var(--ink);
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    .form-field input:focus {
+      border-color: var(--pink-deep);
+      box-shadow: 0 0 0 3px rgba(217,146,166,.12);
+    }
+
+    .form-field input[readonly] {
+      background: #fbf5ec;
+      color: var(--muted);
+    }
+
+    .rsvp-submit {
+      width: 100%;
+      min-height: 45px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--yellow);
+      color: var(--brown-dark);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .rsvp-submit:disabled { opacity: .55; cursor: wait; }
+
+    .rsvp-status {
+      margin: 9px 0 12px;
+      text-align: center;
+      font-size: .78rem;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .rsvp-status:empty { display: none; }
+
+    .rsvp-status.success { color: #7a6650; font-weight: 700; }
+    .rsvp-status.error { color: #a75b6c; font-weight: 700; }
+
+    .private-note {
+      max-width: 600px;
+      margin: 0 auto 22px;
+      padding: 11px 15px;
+      border-radius: 13px;
+      background: rgba(255,243,189,.45);
+      font-size: .75rem;
+      line-height: 1.55;
+      color: #8b785f;
+    }
+
+    .limited-note {
+      max-width: 630px;
+      margin: 0 auto;
+      font-size: .72rem;
+      line-height: 1.6;
+      color: #a09088;
+    }
+
+    .attire-guide {
+      max-width: 720px;
+      margin: 0 auto 38px;
+      text-align: center;
+      padding: 4px 18px 0;
+    }
+
+    .attire-guide h2 {
+      margin: 0 0 9px;
+      font-family: "Pacifico", cursive;
+      font-weight: 400;
+      color: var(--pink-deep);
+      font-size: clamp(1.9rem, 5vw, 2.7rem);
+    }
+
+    .attire-guide > p {
+      max-width: 610px;
+      margin: 0 auto 18px;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.65;
+    }
+
+    .palette {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin: 0 auto 14px;
+    }
+
+    .palette-item {
+      display: grid;
+      justify-items: center;
+      gap: 7px;
+      min-width: 92px;
+      color: var(--brown-dark);
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .swatch {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.9);
+      box-shadow: 0 3px 12px rgba(95,70,58,.12), 0 0 0 1px rgba(95,70,58,.08);
+    }
+
+    .swatch.blue { background: #b9d9ef; }
+    .swatch.yellow { background: #f7e7a9; }
+    .swatch.brown { background: #cdb29a; }
+
+    .pink-note {
+      display: inline-block;
+      margin-top: 10px !important;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #fff0f5;
+      border: 1px solid rgba(217,146,166,.42);
+      color: #9f536a !important;
+      font-size: .82rem !important;
+      font-weight: 700;
+    }
+
+    .pink-note strong {
+      color: #d04f7c;
+      font-weight: 900;
+      letter-spacing: .06em;
+    }
+
+    .countdown {
+      max-width: 690px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+
+    .countdown > div {
+      padding: 15px 8px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, var(--yellow-light), #fff7d8);
+      border: 1px solid rgba(202,166,68,.14);
+    }
+
+    .countdown strong {
+      display: block;
+      font-size: clamp(1.45rem, 4vw, 2rem);
+      color: var(--brown-dark);
+    }
+
+    .countdown span {
+      display: block;
+      margin-top: 4px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--brown);
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      letter-spacing: -.035em;
+      color: var(--pink-deep);
+    }
+
+    .section-heading p {
+      margin: 11px auto 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: .95rem;
+    }
+
+    .kicker {
+      font-family: "DM Sans", system-ui, sans-serif !important;
+      margin: 0 0 6px !important;
+      font-size: .7rem !important;
+      font-weight: 800 !important;
+      letter-spacing: .12em !important;
+      text-transform: uppercase;
+      color: var(--pink-deep) !important;
+    }
+
+    .locations {
+      max-width: 780px;
+      margin: 0 auto;
+      display: grid;
+      gap: 14px;
+    }
+
+    .location {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      background: rgba(255,255,255,.46);
+    }
+
+    .location.party-only { max-width: 620px; width: 100%; margin: 0 auto; }
+    .location-copy { padding: 15px 16px 14px; }
+
+    .location-label {
+      margin: 0 0 6px;
+      font-size: .64rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--pink-deep);
+    }
+
+    .location h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+      line-height: 1.35;
+      color: var(--pink-deep);
+    }
+
+    .location-time {
+      margin: 0 0 5px;
+      font-size: .8rem;
+      font-weight: 800;
+      color: var(--brown);
+    }
+
+    .location-address {
+      margin: 0;
+      font-size: .74rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .location-actions {
+      display: flex;
+      gap: 7px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 7px 10px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: .68rem;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--brown-dark);
+      cursor: pointer;
+    }
+
+    .btn.primary { background: var(--yellow); border-color: rgba(202,166,68,.2); }
+
+    .map-frame {
+      width: 100%;
+      min-height: 160px;
+      height: 100%;
+      border: 0;
+      background: var(--beige);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr .85fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .story-copy { padding: 12px 6px; }
+
+    .story-copy h2 {
+      margin: 0 0 13px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.07;
+      letter-spacing: -.04em;
+      color: var(--pink-deep);
+    }
+
+    .story-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: .98rem;
+    }
+
+    .carousel {
+      width: 100%;
+      position: relative;
+    }
+
+    .carousel-frame {
+      width: 100%;
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      border-radius: var(--radius);
+      background: var(--beige-light);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(95,70,58,.08);
+      touch-action: pan-x pan-y;
+    }
+
+    .carousel-frame::-webkit-scrollbar { display: none; }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      background: var(--beige-light);
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: var(--beige-light);
+    }
+
+    .carousel-controls {
+      margin-top: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-dots { display: flex; justify-content: center; gap: 7px; }
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 0;
+      padding: 0;
+      background: #e5d5ca;
+      cursor: pointer;
+    }
+    .carousel-dot.active { background: var(--pink-deep); }
+
+    .gifts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px 20px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .gift-item {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .gift-item h3 {
+      margin: 0 0 5px;
+      font-size: 1rem;
+      color: var(--pink-deep);
+    }
+
+    .gift-item p {
+      margin: 0;
+      font-size: .79rem;
+      line-height: 1.55;
+      color: var(--muted);
+    }
+
+    .gift-link {
+      display: inline-block;
+      margin-top: 7px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: var(--pink-deep);
+      text-decoration: none;
+    }
+
+    .bank-gift {
+      max-width: 850px;
+      margin: 28px auto 0;
+      padding-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr minmax(180px, 260px);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .bank-copy h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: var(--pink-deep);
+    }
+
+    .bank-copy p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: .88rem;
+    }
+
+    .bank-details {
+      display: grid;
+      gap: 5px;
+      margin: 14px 0 0;
+      color: var(--brown-dark);
+      font-size: .88rem;
+    }
+
+    .bank-details strong { font-weight: 800; }
+
+    .qr-wrap {
+      text-align: center;
+    }
+
+    .qr-image {
+      width: min(100%, 250px);
+      height: auto;
+      margin: 0 auto 10px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    footer {
+      padding: 46px 0 8px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1.1rem;
+      color: var(--pink-deep);
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 18px, 1040px); padding-top: 10px; }
+      .section { padding: 38px 0; }
+      .hero-copy { bottom: 20px; padding: 10px 12px 12px; }
+      .hero-image-wrap, .carousel-frame { border-radius: 22px; }
+      .location { grid-template-columns: 1fr; }
+      .map-frame { height: 165px; min-height: 165px; }
+      .story-grid { grid-template-columns: 1fr; }
+      .story-copy { order: 2; text-align: center; }
+      .carousel { order: 1; }
+      .gifts { grid-template-columns: 1fr; }
+      .bank-gift { grid-template-columns: 1fr; text-align: center; }
+      .bank-details { justify-items: center; }
+    }
+
+    @media (max-width: 430px) {
+      h1 { font-size: clamp(2.8rem, 13vw, 3.35rem); }
+      .hero-subtitle { font-size: clamp(2rem, 9vw, 2.7rem); }
+      .hero-date { font-size: .78rem; margin-top: 10px; }
+      .hero-copy { bottom: 12px; }
+      .countdown { grid-template-columns: repeat(2, 1fr); }
+      .rsvp-options { flex-direction: column; }
+      .rsvp-choice { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="section" style="padding-top:0;">
+      <div class="hero-image-wrap">
+        <img
+          class="hero-image"
+          src="https://res.cloudinary.com/rampver-financials/image/upload/v1787378019/ECB/kalea-1st-birthday/DSCF5008.jpg"
+          data-fallback="assets/kalea-main.jpg"
+          alt="Kalea Elianna first birthday portrait"
+          fetchpriority="high"
+        />
+        <div class="hero-copy">
+          <h1>Kalea Elianna</h1>
+          <p class="hero-subtitle">Turns One!</p>
+          <p class="hero-date">Sunday · October 4, 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="guest-panel" aria-live="polite">
+        <div id="loadingState" class="loading">Preparing your invitation</div>
+
+        <div id="guestContent" hidden>
+          <h2>Dear <span id="guestName">Guest</span>,</h2>
+          <p class="reserved">We would love to celebrate this sweet milestone with you.</p>
+          <div class="seat-line"><span id="seatText">We have reserved your seats.</span></div>
+
+          <div class="rsvp-block">
+            <p class="rsvp-title">Will you be joining us?</p>
+            <p class="rsvp-help">Please confirm your attendance below. If more than one seat is reserved, you may also add the names of any additional attendees who will be joining you.</p>
+            <div class="rsvp-options" role="group" aria-label="RSVP confirmation">
+              <button type="button" class="rsvp-choice" id="rsvpYes">Yes, we’ll be there</button>
+              <button type="button" class="rsvp-choice" id="rsvpNo">No, we can’t make it</button>
+            </div>
+
+            <form id="rsvpForm" class="rsvp-form" hidden novalidate>
+              <div class="form-field">
+                <label for="primaryGuestName">Primary guest</label>
+                <input id="primaryGuestName" type="text" readonly />
+              </div>
+              <div id="plusGuestFields"></div>
+              <button type="submit" class="rsvp-submit" id="rsvpSubmit">Confirm RSVP</button>
+            </form>
+            <div id="rsvpStatus" class="rsvp-status" aria-live="polite"></div>
+          </div>
+
+          <p class="private-note">This is your personalized invitation link and is intended only for you and your reserved party. Please do not share or forward this link.</p>
+          <p class="limited-note"><em>We’ve prepared this celebration with love and as much care as possible. Since seats are limited, we kindly ask for your understanding and request that your party stay within the number of seats reserved for you. Thank you so much for celebrating with our little one.</em></p>
+        </div>
+
+        <div id="errorState" hidden>
+          <h2>Hi there.</h2>
+          <p id="errorMessage" class="reserved">We couldn’t load your invitation details.</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="inviteOnly" hidden>
+      <section class="section" style="padding-bottom: 18px;">
+        <div class="attire-guide">
+          <p class="kicker">What to Wear</p>
+          <h2>Dress in our celebration colors</h2>
+          <p>All attendees are encouraged to wear anything in pastel blue, pastel yellow, or light brown.</p>
+          <div class="palette" aria-label="Suggested attire color palette">
+            <div class="palette-item"><span class="swatch blue" aria-hidden="true"></span><span>Pastel Blue</span></div>
+            <div class="palette-item"><span class="swatch yellow" aria-hidden="true"></span><span>Pastel Yellow</span></div>
+            <div class="palette-item"><span class="swatch brown" aria-hidden="true"></span><span>Light Brown</span></div>
+          </div>
+          <p class="pink-note">Please refrain from wearing <strong>PINK</strong>.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 18px;">
+        <div class="section-heading">
+          <h2>Until Kalea’s special day</h2>
+        </div>
+        <div class="countdown" aria-label="Countdown to celebration">
+          <div><strong id="days">0</strong><span>Days</span></div>
+          <div><strong id="hours">0</strong><span>Hours</span></div>
+          <div><strong id="minutes">0</strong><span>Minutes</span></div>
+          <div><strong id="seconds">0</strong><span>Seconds</span></div>
+        </div>
+      </section>
+
+      <section id="detailsSection" class="section" hidden>
+        <div class="section-heading">
+          <h2 id="eventHeading">Baptism &amp; Birthday Celebration</h2>
+          <p id="eventIntro">Please join us as we welcome Kalea into the faith, then celebrate her very first birthday together.</p>
+        </div>
+
+        <div class="locations">
+          <article id="churchSection" class="location">
+            <div class="location-copy">
+              <p class="location-label">Baptism</p>
+              <h3>Minor Basilica and Diocesan Shrine of St. Paul of the Cross</h3>
+              <p class="location-time">9:00 AM – 11:00 AM</p>
+              <p class="location-address">83 Rainbow St., Marikina, Metro Manila</p>
+              <div class="location-actions">
+                <a class="btn primary" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Minor%20Basilica%20and%20Diocesan%20Shrine%20of%20St.%20Paul%20of%20the%20Cross%2C%2083%20Rainbow%20St%2C%20Marikina%2C%20Metro%20Manila">Open Map</a>
+                <a class="btn" target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Kalea%20Elianna%27s%20Baptism&dates=20261004T010000Z/20261004T030000Z&location=Minor%20Basilica%20and%20Diocesan%20Shrine%20of%20St.%20Paul%20of%20the%20Cross%2C%20Marikina">Add to Calendar</a>
+              </div>
+            </div>
+            <iframe class="map-frame" title="Map to Minor Basilica and Diocesan Shrine of St. Paul of the Cross" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Minor%20Basilica%20and%20Diocesan%20Shrine%20of%20St.%20Paul%20of%20the%20Cross%2C%2083%20Rainbow%20St%2C%20Marikina%2C%20Metro%20Manila&output=embed"></iframe>
+          </article>
+
+          <article id="partySection" class="location">
+            <div class="location-copy">
+              <p class="location-label">First Birthday Party</p>
+              <h3>Naysa’s Kitchen, Marikina</h3>
+              <p class="location-time">12:00 NN – 3:00 PM</p>
+              <p class="location-address">67 Katipunan St., Marikina, Metro Manila</p>
+              <div class="location-actions">
+                <a class="btn primary" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Naysa%27s%20Kitchen%2C%2067%20Katipunan%20St%2C%20Marikina%2C%20Metro%20Manila">Open Map</a>
+                <a class="btn" target="_blank" rel="noopener noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Kalea%20Elianna%27s%201st%20Birthday&dates=20261004T040000Z/20261004T070000Z&location=Naysa%27s%20Kitchen%2C%2067%20Katipunan%20St%2C%20Marikina%2C%20Metro%20Manila">Add to Calendar</a>
+              </div>
+            </div>
+            <iframe class="map-frame" title="Map to Naysa's Kitchen Marikina" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Naysa%27s%20Kitchen%2C%2067%20Katipunan%20St%2C%20Marikina%2C%20Metro%20Manila&output=embed"></iframe>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="story-grid">
+          <div class="carousel" aria-label="Kalea birthday photo carousel">
+            <div class="carousel-frame" id="carouselFrame">
+              <div class="carousel-slide"><img class="carousel-image" src="https://res.cloudinary.com/rampver-financials/image/upload/v1787380913/ECB/kalea-1st-birthday/second_image_new.png" alt="Kalea Elianna birthday portrait 1" loading="lazy" /></div>
+              <div class="carousel-slide"><img class="carousel-image" src="https://res.cloudinary.com/rampver-financials/image/upload/v1787384649/carousel_image_2_rgxn37.jpg" alt="Kalea Elianna birthday portrait 2" loading="lazy" /></div>
+              <div class="carousel-slide"><img class="carousel-image" src="https://res.cloudinary.com/rampver-financials/image/upload/v1787384669/carousel_image_3_dhvdoq.jpg" alt="Kalea Elianna birthday portrait 3" loading="lazy" /></div>
+              <div class="carousel-slide"><img class="carousel-image" src="https://res.cloudinary.com/rampver-financials/image/upload/v1787384648/carousel_image_4_xtxyxa.jpg" alt="Kalea Elianna birthday portrait 4" loading="lazy" /></div>
+            </div>
+            <div class="carousel-controls">
+              <div class="carousel-dots" id="carouselDots" aria-label="Select carousel image"></div>
+            </div>
+          </div>
+          <div class="story-copy">
+            <h2>Our little girl is turning one.</h2>
+            <p>It feels like only yesterday that we first held Kalea in our arms. Now she fills our days with tiny laughs, curious little moments, brave new steps, and a love that keeps growing with her. We would be so happy to have you with us as we celebrate her first year of life.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Gift Wishes</h2>
+          <p>Your presence is already such a beautiful gift to our family. If you would still like to bless Kalea with something, we would appreciate practical gifts that can help with her daily needs, learning, play, and development as she grows.</p>
+        </div>
+
+        <div class="gifts">
+          <div class="gift-item">
+            <h3>Mum Mum Variety Pack</h3>
+            <p>A practical snack option for Kalea.</p>
+            <a class="gift-link" href="https://shopee.ph/product/1538209051/40825502121" target="_blank" rel="noopener noreferrer">View item</a>
+          </div>
+
+          <div class="gift-item">
+            <h3>Moose Gear Baby Tape Diaper</h3>
+            <a class="gift-link" href="https://shopee.ph/product/554184942/13739425134" target="_blank" rel="noopener noreferrer">View item</a>
+          </div>
+
+          <div class="gift-item">
+            <h3>Moose Gear Baby Value Wipes Unscented</h3>
+            <a class="gift-link" href="https://shopee.ph/product/554184942/25450566315" target="_blank" rel="noopener noreferrer">View item</a>
+          </div>
+
+          <div class="gift-item">
+            <h3>Baby Essentials</h3>
+            <p>Everyday practical items are always appreciated.</p>
+          </div>
+
+          <div class="gift-item">
+            <h3>Educational Books and Toys</h3>
+            <p>Age-appropriate books and toys for learning, play, and development.</p>
+          </div>
+        </div>
+
+        <div class="bank-gift">
+          <div class="bank-copy">
+            <h3>A little something for Kalea</h3>
+            <p>You may also help by sending a monetary gift through my mom’s bank account. Any amount will be received with gratitude and lovingly set aside for my needs and growing-up fund.</p>
+            <div class="bank-details">
+              <span><strong>Maribank</strong></span>
+              <span>Karla Marie Mamaril</span>
+              <span>14017342345</span>
+            </div>
+          </div>
+          <div class="qr-wrap">
+            <img id="bankQr" class="qr-image" src="https://res.cloudinary.com/rampver-financials/image/upload/v1787384509/Karla_Maribank_exp2vx.jpg" alt="Maribank QR code for Karla Marie Mamaril" loading="lazy" />
+            <button type="button" class="btn primary" id="saveQrButton">Save QR</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <strong>See you on Kalea’s big day.</strong>
+        October 4, 2026 · Marikina City
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    const STEIN_ENDPOINT = "https://api.steinhq.com/v1/storages/6a89357a92b1163e97344463/invite_list";
+    const MUSIC_URL = "https://res.cloudinary.com/rampver-financials/video/upload/v1787384298/dudi_dam_dam_2_spbqd5.mp3";
+    const QR_URL = "https://res.cloudinary.com/rampver-financials/image/upload/v1787384509/Karla_Maribank_exp2vx.jpg";
+    const INVALID_INVITE_MESSAGE = "This invitation link is missing or invalid. Please open the complete personalized invitation link that was sent to you.";
+
+    const carouselImages = [
+      "https://res.cloudinary.com/rampver-financials/image/upload/v1787380913/ECB/kalea-1st-birthday/second_image_new.png",
+      "https://res.cloudinary.com/rampver-financials/image/upload/v1787384649/carousel_image_2_rgxn37.jpg",
+      "https://res.cloudinary.com/rampver-financials/image/upload/v1787384669/carousel_image_3_dhvdoq.jpg",
+      "https://res.cloudinary.com/rampver-financials/image/upload/v1787384648/carousel_image_4_xtxyxa.jpg"
+    ];
+
+    const backgroundMusic = new Audio(MUSIC_URL);
+    backgroundMusic.loop = true;
+    backgroundMusic.preload = "auto";
+    backgroundMusic.volume = 0.35;
+
+    let currentInvite = "";
+    let currentGuest = null;
+    let currentSeatCount = 1;
+    let selectedRsvp = "";
+    let carouselIndex = 0;
+    let carouselPhysicalIndex = 1;
+    let carouselTimer = null;
+    let carouselScrollTimer = null;
+    let carouselJumpTimer = null;
+
+    const els = {
+      loading: document.getElementById("loadingState"),
+      guestContent: document.getElementById("guestContent"),
+      error: document.getElementById("errorState"),
+      errorMessage: document.getElementById("errorMessage"),
+      guestName: document.getElementById("guestName"),
+      seatText: document.getElementById("seatText"),
+      details: document.getElementById("detailsSection"),
+      church: document.getElementById("churchSection"),
+      party: document.getElementById("partySection"),
+      eventHeading: document.getElementById("eventHeading"),
+      eventIntro: document.getElementById("eventIntro"),
+      inviteOnly: document.getElementById("inviteOnly"),
+      rsvpYes: document.getElementById("rsvpYes"),
+      rsvpNo: document.getElementById("rsvpNo"),
+      rsvpForm: document.getElementById("rsvpForm"),
+      primaryGuestName: document.getElementById("primaryGuestName"),
+      plusGuestFields: document.getElementById("plusGuestFields"),
+      rsvpSubmit: document.getElementById("rsvpSubmit"),
+      rsvpStatus: document.getElementById("rsvpStatus"),
+      carouselFrame: document.getElementById("carouselFrame"),
+      carouselDots: document.getElementById("carouselDots"),
+      saveQrButton: document.getElementById("saveQrButton")
+    };
+
+    document.querySelectorAll("img[data-fallback]").forEach(img => {
+      img.addEventListener("error", () => {
+        if (img.dataset.fallback && img.src.indexOf(img.dataset.fallback) === -1) img.src = img.dataset.fallback;
+      }, { once: true });
+    });
+
+    function normalize(value) {
+      return String(value ?? "").trim();
+    }
+
+    function field(row, wantedName) {
+      const target = wantedName.toLowerCase();
+      const key = Object.keys(row || {}).find(k => k.trim().toLowerCase() === target);
+      return key ? row[key] : undefined;
+    }
+
+    function isYes(value) {
+      return ["yes", "y", "true", "1"].includes(normalize(value).toLowerCase());
+    }
+
+    async function getGuest(inviteValue) {
+      const response = await fetch(STEIN_ENDPOINT, {
+        headers: { Accept: "application/json" },
+        cache: "no-store"
+      });
+
+      if (!response.ok) throw new Error(`Guest list request failed (${response.status})`);
+      const data = await response.json();
+      if (!Array.isArray(data)) return null;
+
+      const target = normalize(inviteValue).toLowerCase();
+      return data.find(row => normalize(field(row, "invite")).toLowerCase() === target) || null;
+    }
+
+    async function saveRsvp(rsvp, attendeeNames) {
+      const payload = {
+        condition: { invite: currentInvite },
+        set: {
+          rsvp,
+          attendee_names: attendeeNames.join(" | "),
+          rsvp_updated_at: new Date().toISOString()
+        },
+        limit: 1
+      };
+
+      const response = await fetch(STEIN_ENDPOINT, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        const message = await response.text().catch(() => "");
+        throw new Error(`RSVP update failed (${response.status}) ${message}`);
+      }
+      return response.json().catch(() => ({}));
+    }
+
+    function removeLoading() {
+      if (els.loading) els.loading.remove();
+    }
+
+    function showError(message) {
+      removeLoading();
+      els.guestContent.hidden = true;
+      els.details.hidden = true;
+      els.inviteOnly.hidden = true;
+      backgroundMusic.pause();
+      backgroundMusic.currentTime = 0;
+      els.errorMessage.textContent = message;
+      els.error.hidden = false;
+    }
+
+    function playBackgroundMusic() {
+      const tryPlay = () => backgroundMusic.play().catch(() => {});
+      backgroundMusic.play().catch(() => {
+        const resumeOnInteraction = () => tryPlay();
+        document.addEventListener("pointerdown", resumeOnInteraction, { once: true });
+        document.addEventListener("keydown", resumeOnInteraction, { once: true });
+      });
+    }
+
+    function createPlusGuestFields() {
+      els.plusGuestFields.innerHTML = "";
+      const extras = Math.max(0, currentSeatCount - 1);
+      for (let i = 0; i < extras; i += 1) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "form-field";
+
+        const label = document.createElement("label");
+        label.htmlFor = `plusGuest${i + 1}`;
+        label.textContent = `Additional attendee ${i + 1} full name (optional)`;
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.id = `plusGuest${i + 1}`;
+        input.name = `plusGuest${i + 1}`;
+        input.autocomplete = "name";
+        input.placeholder = "Full name (optional)";
+
+        wrapper.append(label, input);
+        els.plusGuestFields.appendChild(wrapper);
+      }
+    }
+
+    function setRsvpChoice(choice) {
+      selectedRsvp = choice;
+      els.rsvpYes.classList.toggle("active", choice === "yes");
+      els.rsvpNo.classList.toggle("active", choice === "no");
+      els.rsvpStatus.textContent = "";
+      els.rsvpStatus.className = "rsvp-status";
+
+      els.rsvpForm.hidden = false;
+      els.primaryGuestName.value = normalize(field(currentGuest, "name")) || "Guest";
+
+      if (choice === "yes") {
+        createPlusGuestFields();
+        els.rsvpSubmit.textContent = "Confirm RSVP";
+      } else {
+        els.plusGuestFields.innerHTML = "";
+        els.rsvpSubmit.textContent = "Confirm that we cannot attend";
+      }
+    }
+
+    function getAttendeeNames() {
+      const primary = normalize(els.primaryGuestName.value);
+      if (selectedRsvp !== "yes") return [primary];
+
+      const additional = [...els.plusGuestFields.querySelectorAll("input")]
+        .map(input => normalize(input.value))
+        .filter(Boolean);
+
+      return [primary, ...additional];
+    }
+
+    async function submitRsvp(event) {
+      event.preventDefault();
+      if (!selectedRsvp) return;
+
+      const attendeeNames = getAttendeeNames();
+      if (!attendeeNames) return;
+
+
+      els.rsvpSubmit.disabled = true;
+      els.rsvpStatus.textContent = "Saving your RSVP...";
+      els.rsvpStatus.className = "rsvp-status";
+
+      try {
+        await saveRsvp(selectedRsvp, attendeeNames);
+        els.rsvpStatus.textContent = selectedRsvp === "yes"
+          ? "RSVP confirmed. We’re excited to celebrate with you."
+          : "RSVP received. Thank you for letting us know.";
+        els.rsvpStatus.className = "rsvp-status success";
+        els.rsvpSubmit.textContent = "RSVP Saved";
+      } catch (error) {
+        console.error(error);
+        els.rsvpStatus.textContent = "We couldn’t save your RSVP yet. Please try again.";
+        els.rsvpStatus.className = "rsvp-status error";
+        els.rsvpSubmit.disabled = false;
+      }
+    }
+
+    function renderGuest(guest) {
+      currentGuest = guest;
+      currentInvite = normalize(field(guest, "invite")) || currentInvite;
+      const name = normalize(field(guest, "name")) || "Guest";
+      const seatsRaw = normalize(field(guest, "seats"));
+      const seatsNum = Number(seatsRaw);
+      currentSeatCount = Number.isFinite(seatsNum) && seatsNum > 0 ? Math.floor(seatsNum) : 1;
+      const ninang = isYes(field(guest, "ninang"));
+
+      els.guestName.textContent = name;
+      els.primaryGuestName.value = name;
+      const seatWord = currentSeatCount === 1 ? "seat" : "seats";
+      els.seatText.textContent = `We have reserved ${currentSeatCount} ${seatWord} for you.`;
+
+      if (ninang) {
+        els.church.hidden = false;
+        els.party.classList.remove("party-only");
+        els.eventHeading.textContent = "Baptism & Birthday Celebration";
+        els.eventIntro.textContent = "Please join us as we welcome Kalea into the faith, then celebrate her very first birthday together.";
+      } else {
+        els.church.hidden = true;
+        els.party.classList.add("party-only");
+        els.eventHeading.textContent = "Birthday Celebration";
+        els.eventIntro.textContent = "Come join us for an afternoon of love and happy little moments as Kalea turns one.";
+      }
+
+      const existingRsvp = normalize(field(guest, "rsvp")).toLowerCase();
+      if (existingRsvp === "yes" || existingRsvp === "no") {
+        setRsvpChoice(existingRsvp);
+        els.rsvpStatus.textContent = "You already have an RSVP saved. You may update it below if your plans change.";
+      }
+
+      removeLoading();
+      els.error.hidden = true;
+      els.guestContent.hidden = false;
+      els.inviteOnly.hidden = false;
+      els.details.hidden = false;
+      startCountdown();
+      playBackgroundMusic();
+      initCarousel();
+    }
+
+    function startCountdown() {
+      const eventTime = new Date("2026-10-04T12:00:00+08:00").getTime();
+      const fields = {
+        days: document.getElementById("days"),
+        hours: document.getElementById("hours"),
+        minutes: document.getElementById("minutes"),
+        seconds: document.getElementById("seconds")
+      };
+
+      function tick() {
+        const distance = eventTime - Date.now();
+        if (distance <= 0) {
+          Object.values(fields).forEach(item => item.textContent = "0");
+          return;
+        }
+        fields.days.textContent = Math.floor(distance / 86400000);
+        fields.hours.textContent = Math.floor((distance % 86400000) / 3600000);
+        fields.minutes.textContent = Math.floor((distance % 3600000) / 60000);
+        fields.seconds.textContent = Math.floor((distance % 60000) / 1000);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    function updateCarouselDots(index) {
+      carouselIndex = (index + carouselImages.length) % carouselImages.length;
+      [...els.carouselDots.children].forEach((dot, i) => dot.classList.toggle("active", i === carouselIndex));
+    }
+
+    function scrollCarouselToPhysical(index, smooth = true) {
+      if (!els.carouselFrame) return;
+      carouselPhysicalIndex = index;
+      els.carouselFrame.scrollTo({
+        left: els.carouselFrame.clientWidth * index,
+        behavior: smooth ? "smooth" : "auto"
+      });
+    }
+
+    function showCarouselImage(index, smooth = true) {
+      const logical = (index + carouselImages.length) % carouselImages.length;
+      updateCarouselDots(logical);
+      scrollCarouselToPhysical(logical + 1, smooth);
+    }
+
+    function startCarouselAutoPlay() {
+      clearInterval(carouselTimer);
+      carouselTimer = setInterval(() => {
+        if (!els.carouselFrame) return;
+        const nextPhysical = carouselPhysicalIndex + 1;
+        scrollCarouselToPhysical(nextPhysical, true);
+        if (nextPhysical === carouselImages.length + 1) {
+          updateCarouselDots(0);
+          clearTimeout(carouselJumpTimer);
+          carouselJumpTimer = setTimeout(() => scrollCarouselToPhysical(1, false), 650);
+        } else {
+          updateCarouselDots(nextPhysical - 1);
+        }
+      }, 4000);
+    }
+
+    function initCarousel() {
+      if (!els.carouselFrame || els.carouselDots.children.length) return;
+
+      const realSlides = [...els.carouselFrame.children];
+      if (realSlides.length > 1) {
+        const firstClone = realSlides[0].cloneNode(true);
+        const lastClone = realSlides[realSlides.length - 1].cloneNode(true);
+        firstClone.setAttribute("aria-hidden", "true");
+        lastClone.setAttribute("aria-hidden", "true");
+        els.carouselFrame.appendChild(firstClone);
+        els.carouselFrame.insertBefore(lastClone, els.carouselFrame.firstChild);
+      }
+
+      carouselImages.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "carousel-dot";
+        dot.setAttribute("aria-label", `Show image ${index + 1}`);
+        dot.addEventListener("click", () => {
+          showCarouselImage(index, true);
+          startCarouselAutoPlay();
+        });
+        els.carouselDots.appendChild(dot);
+      });
+
+      const settleCarousel = () => {
+        const width = els.carouselFrame.clientWidth || 1;
+        let physical = Math.round(els.carouselFrame.scrollLeft / width);
+        carouselPhysicalIndex = physical;
+
+        if (physical === 0) {
+          updateCarouselDots(carouselImages.length - 1);
+          clearTimeout(carouselJumpTimer);
+          carouselJumpTimer = setTimeout(() => scrollCarouselToPhysical(carouselImages.length, false), 30);
+        } else if (physical === carouselImages.length + 1) {
+          updateCarouselDots(0);
+          clearTimeout(carouselJumpTimer);
+          carouselJumpTimer = setTimeout(() => scrollCarouselToPhysical(1, false), 30);
+        } else {
+          updateCarouselDots(physical - 1);
+        }
+        startCarouselAutoPlay();
+      };
+
+      els.carouselFrame.addEventListener("scroll", () => {
+        clearTimeout(carouselScrollTimer);
+        carouselScrollTimer = setTimeout(settleCarousel, 120);
+      }, { passive: true });
+
+      els.carouselFrame.addEventListener("pointerdown", () => clearInterval(carouselTimer), { passive: true });
+      els.carouselFrame.addEventListener("touchstart", () => clearInterval(carouselTimer), { passive: true });
+
+      requestAnimationFrame(() => {
+        scrollCarouselToPhysical(1, false);
+        updateCarouselDots(0);
+        startCarouselAutoPlay();
+      });
+    }
+
+    async function saveQr() {
+      try {
+        els.saveQrButton.textContent = "Saving...";
+        const response = await fetch(QR_URL, { mode: "cors" });
+        if (!response.ok) throw new Error("QR download failed");
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = objectUrl;
+        link.download = "Karla-Maribank-QR.jpg";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(objectUrl);
+        els.saveQrButton.textContent = "Save QR";
+      } catch (error) {
+        console.error(error);
+        els.saveQrButton.textContent = "Open QR";
+        const fallbackLink = document.createElement("a");
+        fallbackLink.href = QR_URL;
+        fallbackLink.target = "_blank";
+        fallbackLink.rel = "noopener noreferrer";
+        document.body.appendChild(fallbackLink);
+        fallbackLink.click();
+        fallbackLink.remove();
+        setTimeout(() => { els.saveQrButton.textContent = "Save QR"; }, 1800);
+      }
+    }
+
+    els.rsvpYes.addEventListener("click", () => setRsvpChoice("yes"));
+    els.rsvpNo.addEventListener("click", () => setRsvpChoice("no"));
+    els.rsvpForm.addEventListener("submit", submitRsvp);
+    els.saveQrButton.addEventListener("click", saveQr);
+
+    (async function init() {
+      const params = new URLSearchParams(window.location.search);
+      currentInvite = normalize(params.get("invite"));
+
+      if (!currentInvite) {
+        showError(INVALID_INVITE_MESSAGE);
+        return;
+      }
+
+      try {
+        const guest = await getGuest(currentInvite);
+        if (!guest) {
+          showError(INVALID_INVITE_MESSAGE);
+          return;
+        }
+        renderGuest(guest);
+      } catch (error) {
+        showError("We couldn’t load your invitation details right now. Please try opening the link again.");
+        console.error(error);
+      }
+    })();
+  </script>
+</body>
+</html>
